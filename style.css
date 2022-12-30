@@ -30,10 +30,6 @@ nav, ul {
     font-size: 30px;
 }
 
-ul {
-    margin-right: 12em;
-}
-
 li {
     list-style: none;
     margin: 1em;
@@ -352,8 +348,9 @@ footer p {
 
 
 @media screen and (max-width: 487px) {
-    body {
+    html,body {
         overflow-x: hidden;
+        width: 100vw;
     }
     .menu-toggle {
         display: flex;
@@ -371,7 +368,7 @@ footer p {
         flex-direction: column;
         color: white;
         height: 100vh;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         z-index: -1;
         transform: translateX(100%);
@@ -404,7 +401,6 @@ footer p {
     }
     .text {
         margin: 9em 1em 0 1em;
-        
     }
 
     .c-foto {
