@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    background-color: rgb(222, 218, 218);
+    width: 100%;    
+    z-index: 1;
+}
+
+nav, ul {
+    align-items: center;
+    display: flex;
+    padding: 5px 0 5px 5em;
+    justify-content: space-between;  
+}
+
+.nama {
+    padding-top: .5em;
+    font-size: 30px;
+}
+
+ul {
+    margin-right: 12em;
+}
+
+li {
+    list-style: none;
+    margin: 1em;
+}
+
+.a-navbar {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+.a-navbar:hover {
+    color: rgb(247, 65, 65);
+}
+
+.c-talk {
+    margin: 2px;
+} 
+
+.fa-brands {
+    padding: 0 5px;
+    color: black;
+    font-size: 15px;
+}
+
+.fa-brands:hover {
+    color: red;
+}
+
+.talk {
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 8px 30px;
+    border: 2px solid grey;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.talk:hover {
+    background-color: red;
+    color: white;
+    transition: .3s;
+    border: 2px solid red;
+
+}
+
+/* HALAMAN 1 */
+
+.container {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(222, 218, 218);
+    height: 100vh;
+}
+
+.c-img {
+    margin: 12em 0 0 20px;
+    padding-right: 2em;
+}
+
+.image {
+    width: 600px;
+}
+
+.red {
+    color: red;
+}
+
+.text {
+    margin: 15em 200px 0 150px;
+    font-size: larger;
+}
+
+.p {
+    letter-spacing: 5px;
+    font-size: small;
+}
+
+/* About */
+
+.c-about {
+    display: flex;
+    align-items: stretch;
+}
+
+.c-foto {
+    margin: 5em 0 0 9em;
+}
+
+.ganteng {
+    width: 300px;
+    height: 30em;
+}
+
+.c-about-me {
+    margin: 8em 0 0 2em;
+    max-width: 20em;
+}
+
+.about-me {
+    padding-bottom: 1em;
+}
+
+/* SKILL */
+
+.c-skill {
+    text-align: flex-start;
+    background-color: rgb(222, 218, 218);
+    margin-top: 5em;
+    height: 90vh;
+}
+
+.j-skill {
+    padding-top: 3em;
+    text-align: center;
+}
+
+.c-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+.card {
+    background-color: rgb(197, 189, 189);
+    width: 20em;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 8px;
+}
+
+.card:hover {
+    background: linear-gradient(45deg, rgb(120, 4, 120), rgb(3, 55, 168), rgb(210, 30, 39));
+    transform: translateY(-10px);
+    color: white;
+    transition: .3s;
+}
+
+.a-card {
+    text-decoration: none;
+    color: black;
+}
+
+.a-card:hover {
+    color: white;
+}
+
+.logo-skill {
+    font-size: 3em;
+}
+
+/* Project */
+
+.project {
+    text-align: flex-start;
+    margin-top: 5em;
+    height: 150vh;
+}
+
+.j-project {
+    padding-top: 3em;
+    text-align: center;
+}
+
+.c-project-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+
+.card2 {
+    border-radius: 10px;
+    border: 4px solid gray;
+    background-color: rgb(197, 189, 189);
+    text-align: center;
+    margin: 2em;
+}
+
+.card2:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.a-jadwal {
+    text-decoration: none;
+    color: black;
+}
+
+.a-jadwal:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.jadwal-img {
+    width: 20em;
+}
+
+.judul-project {
+    font-size: 20px;
+    padding: 8px;
+}
+
+/* pesan */
+
+.pesan {
+    background-color: rgb(222, 218, 218);
+}
+
+.judul {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.container-pesan {
+    margin-top: 30px;
+    height: 50vh;
+}
+
+.c-input {
+    text-align: center;
+    width: 100%;
+}
+
+.c-pesan {
+    padding-top: 10em;
+    margin-top: 8em;
+}
+
+.c-pesan , input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 1em;
+    border-radius: 8px grey;
+    padding: 1em;
+}
+
+.submit {
+    padding: 8px 1em;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+
+/* footer */
+footer {
+    height: 80px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+footer p {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    opacity: 0;
+    left: -9.8px;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: rgb(198, 39, 39);
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: rgb(198, 39, 39);
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+/* responsive */
+
+
+@media screen and (max-width: 487px) {
+    body {
+        overflow-x: hidden;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    nav {
+        justify-content: space-around;
+    }
+    nav ul{
+        position: absolute;
+        overflow-x: hidden;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        color: white;
+        height: 100vh;
+        justify-content: space-between;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+        background-color: rgb(222, 218, 218);
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    nav .nama {
+        padding-left: 0;
+    }
+
+    .c-image {
+        display: none;
+    }
+    .image {
+        width: 400px;
+    }
+    .container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(222, 218, 218);
+        height: 70em;
+    }
+    .text {
+        margin: 9em 1em 0 1em;
+        
+    }
+
+    .c-foto {
+        margin: 5em 0 0 1em;
+    }
+    
+    .c-about-me {
+        margin: 8em 0 0 2em;
+        max-width: 20em;
+    }
+    .c-skill {
+        text-align: flex-start;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(222, 218, 218);
+        margin-top: 5em;
+        height: 70em;
+    }
+    .project {
+        height: 150em;
+    }
+    .pesan {
+        height: 35em;
+    }
+    .ganteng {
+        width: 220px;
+        height: 22em;
+    }
+
+}
