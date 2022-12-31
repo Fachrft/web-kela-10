@@ -26,13 +26,12 @@ nav, ul {
 }
 
 .nama {
-    padding-top: .5em;
     font-size: 30px;
 }
 
 li {
     list-style: none;
-    margin: 1em;
+    padding: 1em;
 }
 
 .a-navbar {
@@ -44,10 +43,6 @@ li {
 .a-navbar:hover {
     color: rgb(247, 65, 65);
 }
-
-.c-talk {
-    margin: 2px;
-} 
 
 .fa-brands {
     padding: 0 5px;
@@ -166,7 +161,6 @@ li {
 }
 
 .card:hover {
-    background: linear-gradient(45deg, rgb(120, 4, 120), rgb(3, 55, 168), rgb(210, 30, 39));
     transform: translateY(-10px);
     color: white;
     transition: .3s;
@@ -348,7 +342,7 @@ footer p {
 
 
 @media screen and (max-width: 487px) {
-    html,body {
+    html, body {
         overflow-x: hidden;
         width: 100vw;
     }
@@ -356,11 +350,11 @@ footer p {
         display: flex;
     }
     nav {
+        display: flex;
         justify-content: space-around;
     }
     nav ul{
         position: absolute;
-        overflow-x: hidden;
         width: 100%;
         left: 0;
         right: 0;
@@ -382,25 +376,37 @@ footer p {
         transform: translateX(0);
     }
 
-    nav .nama {
-        padding-left: 0;
+    .c-talk a :nth-child(1) {
+        display: none;
+    }
+
+    .nama {
+        transform: translateX(-55px);
+    }
+
+    .text {
+        font-size: medium;
+    }
+
+    .c-about {
+        flex-direction: column;
     }
 
     .c-image {
         display: none;
     }
     .image {
-        width: 400px;
+        display: none;
     }
     .container {
         flex-direction: column;
         text-align: center;
         width: 100%;
         background-color: rgb(222, 218, 218);
-        height: 70em;
+        height: 41.5em;
     }
     .text {
-        margin: 9em 1em 0 1em;
+        margin: 0 1em 0 1em;
     }
 
     .c-foto {
@@ -429,5 +435,4 @@ footer p {
         width: 220px;
         height: 22em;
     }
-
 }
